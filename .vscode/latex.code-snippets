@@ -1,0 +1,38 @@
+{
+    "CPP Inline": {
+        "prefix": ["\\cppi{}"],
+        "body": ["\\cppi{${0:inline-code}}"],
+        "description": "Displays cpp code (inline format)."
+    },
+    "Python Inline": {
+        "prefix": ["\\pyi{}"],
+        "body": ["\\pyi{${0:inline-code}}"],
+        "description": "Displays python code (inline format)."
+    },
+    "Bash Inline": {
+        "prefix": ["\\bashi{}"],
+        "body": ["\\bashi{${0:inline-code}}"],
+        "description": "Displays bash code (inline format)."
+    },
+
+    "One image": {
+        "prefix": ["\\image{}"],
+        "body": ["\\image","{${0:source}}","{${1:caption}}"],
+        "description": "Displays one image."
+    },
+    "Two images": {
+        "prefix": ["\\imaged"],
+        "body": ["\\imaged","{${0:source-left}}","{${1:caption-left}}","{${2:source-right}}","{${3:caption-right}}"],
+        "description": "Displays two images"
+    },
+    "Bash Inline": {
+        "prefix": ["\\imageq"],
+        "body": ["\\imageq","{${0:source-topLeft}}","{${1:caption-topLeft}}","{${2:source-topRight}}","{${3:caption-topRight}}","{${4:source-bottomLeft}}","{${5:caption-bottomLeft}}","{${6:source-bottomRight}}","{${7:caption-bottomRight}}"],
+        "description": "Displays four images"
+    },
+    "Table": {
+        "prefix": ["\\ctable"],
+        "body": ["\\ctable","{${0:column-format}}","{${1:table-content}}","{${2:caption}}"],
+        "description": "Displays a table"
+    },
+}

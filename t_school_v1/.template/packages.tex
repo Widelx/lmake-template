@@ -1,0 +1,37 @@
+\usepackage[margin=5cc]{geometry}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage[bottom]{footmisc}
+\usepackage{subcaption}
+
+% Headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+
+%%%%% Perpage package %%%%%
+% This sets the footnotes to reset to 1 at each pages
+\usepackage{perpage}
+\MakePerPage{footnote}
+
+%%%%% Minted package %%%%%
+\usepackage[newfloat, dvipsnames, outputdir=temp]{minted}
+% This sets the space around minted blocs
+\BeforeBeginEnvironment{minted}{\vspace{-5pt}}
+\AfterEndEnvironment{minted}{\vspace{-30pt}}
+\usemintedstyle{lovelace}
+\definecolor{mintbg}{gray}{0.95}
+\setminted{bgcolor=mintbg, frame=lines, rulecolor=\color{gray!50}}
+\setminted[magma.py:Magma -x]{mathescape=true} % math mode in comments
+
+%%%%% Caption package %%%%%
+\usepackage{caption}
+% This sets the space around captions
+\setlength{\abovecaptionskip}{5pt}
+\setlength{\belowcaptionskip}{-15pt}

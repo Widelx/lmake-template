@@ -1,0 +1,58 @@
+{
+    /* Latex settings */
+    /* Settings override */
+    "files.autoSave": "onWindowChange",
+    "editor.quickSuggestions": {
+        "other": "off",
+        "comments": "off",
+        "strings": "off"
+    },
+    "todo-tree.filtering.excludeGlobs": [
+        "[\"**/*.tex\"]"
+    ],
+    // Compilation tool chain
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "lmake",
+            "tools": [
+                "lmake"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "lmake",
+            "command": "python D:/Documents/4_Developpement/2_Scripts/latex_make/lmake.py",
+            "args": [
+                "-c",
+                "%DOCFILE_EXT%",
+            ]
+        }
+    ],
+    // Generated format
+    "[latex]": {
+        "editor.wordWrap": "on",
+        "editor.fontFamily": "",
+        "editor.fontSize": 15,
+        "editor.autoIndent": "none",
+        "editor.insertSpaces": true,
+        "editor.tabSize": 8
+    },
+    // ltex settings
+    "ltex.language": "fr",
+    "ltex.completionEnabled": false,
+    "ltex.latex.commands": {
+        "\\cppi{}": "ignore",
+        "\\pyi{}": "ignore",
+        "\\bashi{}": "ignore",
+        "\\image{}": "ignore",
+        "\\imaged{}": "ignore",
+        "\\imageq{}": "ignore",
+    },
+    "ltex.latex.environments": {
+        "cpp": "ignore",
+        "python": "ignore",
+        "bash": "ignore",
+    }
+}
